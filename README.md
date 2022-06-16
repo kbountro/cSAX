@@ -1,5 +1,5 @@
 # Clustering SAX (pSAX)
-MATLAB implementation of the cSAX time-series symbolic representation. Tested with MATLAB R2019a.
+MATLAB implementation of the cSAX time-series symbolic representation. Tested with MATLAB versions R2018b and R2019a.
 
 # Table of Contents
 1. [Introduction](#introduction)
