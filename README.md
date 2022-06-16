@@ -9,7 +9,7 @@ MATLAB implementation of the cSAX time-series symbolic representation. Tested wi
 
 
 ## Introduction <a name="introduction"></a>
-The cSAX (Clustering SAX) [[1]](#1) method is an extension of the well-known SAX [[2]](#2) (Symbolic Aggregate Approximation) for time-series dimensionality reduction. The main contribution of the method is a SAX-based representation oriented for high-level mining tasks that employs the Mean-Shift clustering method and is shown to enhance anomaly detection in the lower-dimensional space. The accuracy has been measured for anomaly detection and discord discovery.
+The cSAX (Clustering SAX) [[1]](#1) method is an extension of the well-known SAX [[2]](#2) (Symbolic Aggregate Approximation) for time-series dimensionality reduction. The main contribution of the method is a SAX-based representation oriented for high-level mining tasks that employs the Mean-Shift clustering method for the descritization and is shown to enhance anomaly detection in the lower-dimensional space. The accuracy has been measured for anomaly detection and discord discovery.
 
 
 ## Files Description <a name="files"></a>
