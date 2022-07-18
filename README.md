@@ -15,17 +15,17 @@ The cSAX (Clustering SAX) [[1]](#1) method is an extension of the well-known SAX
 ## Files Description <a name="files"></a>
 This project consists of the following components:
 
-* **cSAX, cSAX_overlap:** Main functions, use whichever suits your application. The pSAX.m transforms the dataset with non-overlapping windows, whereas pSAX_overlap.m transforms every possible subsequence (even overlapping) separately.
+* **cSAX, cSAX_overlap:** Main functions, use whichever suits your application. The cSAX.m transforms the dataset with non-overlapping windows, whereas cSAX_overlap.m transforms every possible subsequence (even overlapping) separately.
 * **tsPAA:** (c) 2003, E. Keogh, J. Lin, S. Lonardi, P. Patel, L. Wei. Time-series to PAA approximation. Original file with minor modifications.
 * **timeseries2symbol:** (c) 2003, E. Keogh, J. Lin, S. Lonardi, P. Patel, L. Wei. Computes SAX representation of the data. Original file with minor modifications.
-* **mvksdensity, statskcompute, statskernelinfo:** (c) 2015-2016 The MathWorks, Inc. These are MATLAB's source files. They are called from the built-in function 'ksdensity'. We tweaked them to i) allow to estimate arbitrarily large number of density points (it was limited to 100 before) and ii) to fix the optimal smoothness parameter estimation for the Epanechnikov kernel, as it was set for the Gaussian kernel only. See https://www.mathworks.com/help/stats/ksdensity.html for more info.
-* **lloydmax:** Lloyd-Max quantizer. Quantize according to a probability density function.
-* **k-means++:** The k-means++ algorithm for initialization of k-means. Taken from the k-means file of Laurent S.: (https://www.mathworks.com/matlabcentral/fileexchange/28804-k-means), version 1.7.0.0
+* **HGMeanShiftCluster:** The Mean-Shift clustering algorithm. This is a modified version of:  
+Mean Shift Clustering (https://www.mathworks.com/matlabcentral/fileexchange/10161-mean-shift-clustering), (c) 2006 Bart Finkston,  
+meanshift_matlab (https://github.com/hangong/meanshift_matlab), (c) 2015 Han Gong, University of East Anglia.
 
 
 ## Datasets <a name="datasets"></a>
 A large collection of labeled datasets for anomaly detection is available at the NUMENTA library https://github.com/numenta/NAB 
-and at the Hexagon ML/UCR Anomaly Detection archive https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ (check the comment at https://forums.hexagon-ml.com/t/multi-dataset-time-series-anomaly-detection/591/136 to find the labels).
+and at the Hexagon ML/UCR Anomaly Detection archive https://www.cs.ucr.edu/~eamonn/time_series_data_2018/ (refer to https://forums.hexagon-ml.com/t/multi-dataset-time-series-anomaly-detection/591/136 to find the labels).
 
 
 ## Installation and Execution Instructions <a name="execution"></a>
